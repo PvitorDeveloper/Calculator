@@ -1,0 +1,27 @@
+.calculator{
+    height: 640px;
+    width: 470px;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title{
+    font-size: 90px;
+    color: linear-gradient(to right, #480048 , #c04848 );
+}
+
+.buttons{
+    width: 75%;
+}
+
+.operators{
+    height: 100%;
+    width: 25%;
+    background-color: gray;
+}
+
+.bigzero{
+    width: 66.6%;
+}
