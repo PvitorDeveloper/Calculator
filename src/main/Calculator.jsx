@@ -19,7 +19,6 @@ export default ()=>{
     function clear(){
         setDisplayValue('')
         setN1(0)
-        setN2(0)
     }
 
 
@@ -35,18 +34,17 @@ export default ()=>{
 
         if(n1 !== 0 && displayValue !== 0){
             console.log(operator)
-            setN2(displayValue)
             switch(operator){
                 case'÷': 
-                    setDisplayValue(n1/displayValue);
+                    setDisplayValue(parseInt(n1)/parseInt(displayValue));
                     setN1(displayValue);
                 break;
                 case'x': 
-                    setDisplayValue(n1*displayValue);
+                    setDisplayValue(parseInt(n1)*parseInt(displayValue));
                     setN1(displayValue);
                 break;
                 case'-': 
-                    setDisplayValue(n1-displayValue);
+                    setDisplayValue(parseInt(n1)-parseInt(displayValue));
                     setN1(displayValue);
                 break;
                 case'+': 
