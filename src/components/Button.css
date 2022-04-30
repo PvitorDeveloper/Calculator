@@ -2,5 +2,10 @@
     height: 112px;
     width: 33.33%;
     font-size: 25px;
+    outline: none;
 }
 
+.button:hover{
+    background-color: #ccc;
+    border: none;
+}
