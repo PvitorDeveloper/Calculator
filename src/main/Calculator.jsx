@@ -8,7 +8,6 @@ export default ()=>{
    
     const [displayValue, setDisplayValue] = useState ('');
     const [n1, setN1] = useState (0);
-    const [n2, setN2] = useState (0);
     const [operator, setOperator] = useState ('');
 
     function teste(e){
@@ -40,21 +39,23 @@ export default ()=>{
             switch(operator){
                 case'÷': 
                     setDisplayValue(n1/displayValue);
+                    setN1(displayValue);
                 break;
                 case'x': 
                     setDisplayValue(n1*displayValue);
+                    setN1(displayValue);
                 break;
                 case'-': 
                     setDisplayValue(n1-displayValue);
+                    setN1(displayValue);
                 break;
                 case'+': 
                     setDisplayValue(parseInt(n1)+parseInt(displayValue));
+                    setN1(displayValue);
                 break;
                 default:
                     alert('Operador Invalido!')
             } 
-            setN1(0);
-            setN2(0);
         }
     }
 
